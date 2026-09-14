@@ -130,7 +130,7 @@
         '<div>' +
           '<span class="eyebrow">Proprietary LLMs for VIP player management</span>' +
           '<h1>VIPs don&rsquo;t churn over odds.<br>They churn over <span class="grad-text">one missed signal</span>.</h1>' +
-          '<p class="lede">Trueloop AI trains proprietary models on the nuance that decides VIP relationships &mdash; mood, timing, restraint, and the things a high-net-worth player implies rather than says. Built by peope  who ran the desk.</p>' +
+          '<p class="lede">Trueloop AI trains proprietary models on the nuance that decides VIP relationships &mdash; mood, timing, restraint, and the things a high-net-worth player implies rather than says. Built by people who ran the desk.</p>' +
           '<div class="hero-actions">' +
             '<a class="btn btn--lg" href="#/contact">Request a briefing ' + I.arrow + '</a>' +
             '<a class="btn btn--lg btn--ghost" href="#/platform">How it works</a>' +

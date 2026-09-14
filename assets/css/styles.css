@@ -159,6 +159,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
   padding-inline: var(--gut);
 }
 .section { padding-block: clamp(64px, 9vw, 130px); position: relative; }
+.hero + .section { padding-top: clamp(48px, 5vw, 72px); }
 .section--tight { padding-block: clamp(48px, 6vw, 80px); }
 
 .skip-link {
@@ -306,9 +307,8 @@ p { margin: 0 0 1.1em; color: var(--text-dim); text-wrap: pretty; }
 }
 .brand img {
   width: 38px; height: 38px;
-  border-radius: 10px;
-  border: 1px solid var(--border);
-  background: #05060f;
+  /* The icon art carries its own rounded corners and ground, so no CSS frame
+     here - a border at a different radius would float off the artwork. */
 }
 .brand .brand-sub {
   font-family: var(--font-mono);
@@ -399,7 +399,9 @@ p { margin: 0 0 1.1em; color: var(--text-dim); text-wrap: pretty; }
 /* ---------- Hero ---------- */
 .hero {
   position: relative;
-  padding-block: clamp(56px, 9vw, 104px) clamp(56px, 8vw, 100px);
+  /* Less padding at the foot than the head: the section that follows brings
+     its own top padding, and the two used to compound into a ~290px void. */
+  padding-block: clamp(56px, 9vw, 104px) clamp(40px, 4vw, 56px);
   overflow: hidden;
 }
 .hero-grid {
@@ -416,7 +418,7 @@ p { margin: 0 0 1.1em; color: var(--text-dim); text-wrap: pretty; }
 }
 .hero h1 { margin-bottom: 22px; }
 .hero .lede { margin-bottom: 30px; }
-.hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 34px; }
+.hero-actions { display: flex; flex-wrap: wrap; gap: 12px; }
 
 .hero-visual {
   position: relative;

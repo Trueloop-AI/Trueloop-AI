@@ -6,26 +6,83 @@
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
-  "display_override": ["standalone", "minimal-ui", "browser"],
+  "display_override": [
+    "standalone",
+    "minimal-ui",
+    "browser"
+  ],
   "orientation": "any",
   "background_color": "#05060f",
   "theme_color": "#05060f",
   "lang": "en-GB",
   "dir": "ltr",
-  "categories": ["business", "productivity", "utilities"],
+  "categories": [
+    "business",
+    "productivity",
+    "utilities"
+  ],
   "prefer_related_applications": false,
   "icons": [
-    { "src": "./assets/icons/android-icon-36x36.png",   "sizes": "36x36",   "type": "image/png", "density": "0.75", "purpose": "any" },
-    { "src": "./assets/icons/android-icon-48x48.png",   "sizes": "48x48",   "type": "image/png", "density": "1.0",  "purpose": "any" },
-    { "src": "./assets/icons/android-icon-72x72.png",   "sizes": "72x72",   "type": "image/png", "density": "1.5",  "purpose": "any" },
-    { "src": "./assets/icons/android-icon-96x96.png",   "sizes": "96x96",   "type": "image/png", "density": "2.0",  "purpose": "any" },
-    { "src": "./assets/icons/android-icon-144x144.png", "sizes": "144x144", "type": "image/png", "density": "3.0",  "purpose": "any" },
-    { "src": "./assets/icons/android-icon-192x192.png", "sizes": "192x192", "type": "image/png", "density": "4.0",  "purpose": "any" },
-    { "src": "./assets/icons/android-icon-192x192.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable" },
-    { "src": "./assets/icons/apple-icon-180x180.png",   "sizes": "180x180", "type": "image/png", "purpose": "any" },
-    { "src": "./assets/icons/ms-icon-310x310.png",      "sizes": "310x310", "type": "image/png", "purpose": "any" },
-    { "src": "./assets/logo/logo-512.png",              "sizes": "512x512", "type": "image/png", "purpose": "any" },
-    { "src": "./assets/logo/logo-512.png",              "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+    {
+      "src": "./assets/icons/android-icon-36x36.png",
+      "sizes": "36x36",
+      "type": "image/png",
+      "density": "0.75",
+      "purpose": "any"
+    },
+    {
+      "src": "./assets/icons/android-icon-48x48.png",
+      "sizes": "48x48",
+      "type": "image/png",
+      "density": "1.0",
+      "purpose": "any"
+    },
+    {
+      "src": "./assets/icons/android-icon-72x72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "density": "1.5",
+      "purpose": "any"
+    },
+    {
+      "src": "./assets/icons/android-icon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "density": "2.0",
+      "purpose": "any"
+    },
+    {
+      "src": "./assets/icons/android-icon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "density": "3.0",
+      "purpose": "any"
+    },
+    {
+      "src": "./assets/icons/android-icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "density": "4.0",
+      "purpose": "any"
+    },
+    {
+      "src": "./assets/icons/apple-icon-180x180.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./assets/icons/ms-icon-310x310.png",
+      "sizes": "310x310",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./assets/icons/maskable-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
   ],
   "screenshots": [
     {
@@ -42,21 +99,39 @@
       "short_name": "Platform",
       "description": "Execution modes, per-player agents and governance",
       "url": "./#/platform",
-      "icons": [{ "src": "./assets/icons/android-icon-96x96.png", "sizes": "96x96", "type": "image/png" }]
+      "icons": [
+        {
+          "src": "./assets/icons/android-icon-96x96.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
     },
     {
       "name": "Pricing",
       "short_name": "Pricing",
       "description": "The three commercial service models",
       "url": "./#/pricing",
-      "icons": [{ "src": "./assets/icons/android-icon-96x96.png", "sizes": "96x96", "type": "image/png" }]
+      "icons": [
+        {
+          "src": "./assets/icons/android-icon-96x96.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
     },
     {
       "name": "Contact",
       "short_name": "Contact",
       "description": "Request a briefing",
       "url": "./#/contact",
-      "icons": [{ "src": "./assets/icons/android-icon-96x96.png", "sizes": "96x96", "type": "image/png" }]
+      "icons": [
+        {
+          "src": "./assets/icons/android-icon-96x96.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
     }
   ]
 }

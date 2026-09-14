@@ -12,7 +12,7 @@
      worker activates only when the visitor accepts.
    ========================================================================== */
 
-const CACHE_VERSION = 'v1.0.0';
+const CACHE_VERSION = 'v1.1.0';
 const SHELL_CACHE  = 'trueloop-shell-' + CACHE_VERSION;
 const ASSET_CACHE  = 'trueloop-assets-' + CACHE_VERSION;
 const FONT_CACHE   = 'trueloop-fonts-' + CACHE_VERSION;
@@ -30,8 +30,8 @@ const PRECACHE = [
   './assets/js/content.js',
   './assets/js/legal.js',
   './assets/js/app.js',
-  './assets/logo/logo-512.png',
-  './assets/logo/logo-96.png',
+  './assets/icons/android-icon-96x96.png',
+  './assets/icons/android-icon-192x192.png',
   './assets/img/og-image.png',
   './assets/icons/favicon-32x32.png',
   './assets/icons/favicon-96x96.png',
