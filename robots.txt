@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# No Sitemap directive: a sitemap's <loc> must be an absolute URL, and this
+# site deliberately keeps its address in one place (the canonical tag in
+# index.html). There is exactly one indexable document anyway — every route is
+# a hash fragment of it, which crawlers do not index separately.

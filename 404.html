@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Redirecting — Trueloop AI</title>
+<meta name="robots" content="noindex">
+<style>
+  html,body{margin:0;height:100%;background:#05060f;color:#e9eaf4;
+    font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+    display:grid;place-items:center;text-align:center;padding:24px}
+  a{color:#29c7f5}
+</style>
+<script>
+  /* GitHub Pages serves this file for any unknown path. The site itself is a
+     single document using hash routing, so send every stray path back to it,
+     preserving the requested path as a hash route where that makes sense. */
+  (function () {
+    var base = location.pathname.replace(/\/[^\/]*$/, '/');
+    var repoRoot = base;
+    var rest = location.pathname.slice(repoRoot.length).replace(/^\/+/, '');
+    var target = repoRoot + (rest ? '#/' + rest.replace(/\.html?$/, '') : '') + location.search;
+    location.replace(target);
+  })();
+</script>
+</head>
+<body>
+  <p>Redirecting to <a href="./">Trueloop AI</a>&hellip;</p>
+</body>
+</html>
