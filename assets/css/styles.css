@@ -418,6 +418,23 @@ p { margin: 0 0 1.1em; color: var(--text-dim); text-wrap: pretty; }
 }
 .hero h1 { margin-bottom: 22px; }
 .hero .lede { margin-bottom: 30px; }
+
+/* Above 940px the hero splits in two, so the headline no longer has the viewport
+   to fill - it has a 420-535px column. The global `h1 { clamp(2.4rem, 6vw,
+   4.2rem) }` goes on scaling with the viewport regardless, so on a 1080p screen
+   it sat at its 67px cap inside a 536px column: the headline broke over five
+   lines, stood 376px tall, and pushed the lede and the CTAs past the fold on any
+   viewport shorter than ~840px (1080p at 125% display scaling, or any 1280x800
+   laptop). Re-cap it against the column it actually occupies. 4.6vw reaches
+   3.4rem exactly where .wrap stops growing (1180px), so the ramp and the cap
+   meet without a step. Below 941px the hero stacks, the column is full-bleed
+   again and the global rule is the right one - hence scoped, not global. */
+@media (min-width: 941px) {
+  .hero h1 { font-size: clamp(2.2rem, 4.6vw, 3.4rem); }
+  /* The other half of that overflow: 104px of head padding under a 73px sticky
+     header. Short viewports cannot spare it, wide ones do not miss it. */
+  .hero { padding-block: clamp(48px, 6vw, 76px) clamp(40px, 4vw, 56px); }
+}
 .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; }
 
 .hero-visual {

@@ -12,7 +12,7 @@
      worker activates only when the visitor accepts.
    ========================================================================== */
 
-const CACHE_VERSION = 'v1.1.0';
+const CACHE_VERSION = 'v1.1.1';
 const SHELL_CACHE  = 'trueloop-shell-' + CACHE_VERSION;
 const ASSET_CACHE  = 'trueloop-assets-' + CACHE_VERSION;
 const FONT_CACHE   = 'trueloop-fonts-' + CACHE_VERSION;
